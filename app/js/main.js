@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
@@ -22,3 +23,8 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+=======
+import "../CSS/style.css";
+import "../CSS/variable.css";
+import { kidsData } from "./kids.js";
+>>>>>>> Stashed changes
