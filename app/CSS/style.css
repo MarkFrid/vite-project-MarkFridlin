@@ -1,0 +1,133 @@
+html, 
+body,
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+
+body {
+  background: linear-gradient(to bottom right, var(--light-red), var(--dark-red));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+h1 {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-size: var(--h1);
+  text-align: center;
+  margin-bottom: 0.5vh;
+  background: linear-gradient(to bottom, var(--dark-black), var(--primary), var(--light-grey));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+  height: 8vh;
+}
+
+.btn {
+  width: 15%;
+  height: 100%;
+  font-size: var(--h5);
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 20px 5%;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1vw;
+  margin-top: 2%;
+  min-width: 400px;
+  width: 30%;
+  height: 45vh;
+  border: 1vw solid var(--dark-black);
+  border-radius: 5%;
+  background: radial-gradient(circle, var(--light-black), var(--dark-black));
+  box-shadow: -10px 10px 20px var(--dark-black);
+}
+
+.card-heading {
+  font-size: var(--h3);
+  color: var(--primary);
+  margin-bottom: 5%;
+}
+
+.card-subheading {
+  font-size: var(--h4);
+  color: var(--light-grey);
+  margin-bottom: 5%;
+}
+
+.card-img {
+  width: 100%;
+  height: 75%;
+  object-fit: contain;
+}
+
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: var(--h2);
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    height: 60vh;
+    min-width: 100px;
+  }
+
+  .card-heading {
+    font-size: var(--h2);
+    margin-top: 2%;
+  }
+
+  .name,
+  .imgLink {
+    width: 250px;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+}
