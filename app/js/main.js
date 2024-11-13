@@ -6,6 +6,7 @@ const DOMSelectors = {
   container: document.querySelector(".container"),
   children: document.querySelector(".children"),
   teenagers: document.querySelector(".teenagers"),
+  all: document.querySelector(".all"),
 };
 
 let idCounter = 0;
@@ -42,6 +43,11 @@ DOMSelectors.children.addEventListener("click", () => {
 });
 
 DOMSelectors.teenagers.addEventListener("click", () => {
-  const filteredData = kidsData.filter((kid) => kid.age >= 13 && kid.age < 20);
+  const filteredData = kidsData.filter((kid) => kid.age >= 13);
+  displayCards(filteredData);
+});
+
+DOMSelectors.all.addEventListener("click", () => {
+  const filteredData = kidsData.filter((kid) => kid.age < 1000);
   displayCards(filteredData);
 });
