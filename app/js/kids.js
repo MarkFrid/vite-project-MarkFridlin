@@ -1,10 +1,10 @@
-export const kidsData = [
+const kidsData = [
   {
     name: "Emma",
     age: 7,
     price: 25.99,
-    imageUrl: "",
-    altText: "",
+    imageUrl: "emma",
+    altText: "an image of a child",
   },
   {
     name: "Liam",
@@ -141,4 +141,4 @@ export const kidsData = [
   },
 ];
 
-export default kidsData;
+export { kidsData };

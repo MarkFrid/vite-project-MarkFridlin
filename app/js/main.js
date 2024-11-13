@@ -1,6 +1,6 @@
 import "../CSS/style.css";
 import "../CSS/variable.css";
-import { kidsData } from "./kids.js";
+import { kidsData } from "../js/kids.js";
 
 const DOMSelectors = {
   container: document.querySelector(".container"),
