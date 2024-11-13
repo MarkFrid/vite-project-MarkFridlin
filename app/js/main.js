@@ -12,11 +12,11 @@ const DOMSelectors = {
 let idCounter = 0;
 
 function displayCards(data) {
-  DOMSelectors.container.innerHTML = ""; // Clear container first
-  idCounter = 0; // Reset idCounter to 0 each time displayCards is called
+  DOMSelectors.container.innerHTML = "";
+  /*   idCounter = 0; */
 
   data.forEach((card) => {
-    idCounter += 1; // Increment idCounter for each card
+    idCounter += 1;
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
       `<div class="card" id="card-${idCounter}">
