@@ -59,7 +59,7 @@ const kidsData = [
     name: "Amelia",
     age: 8,
     price: 29.99,
-    mageUrl: "amelia.png",
+    imageUrl: "amelia.png", // corrected from 'mageUrl'
     altText: "an image of a child",
   },
   {
@@ -72,7 +72,7 @@ const kidsData = [
   {
     name: "Lucas",
     age: 9,
-    rice: 32.99,
+    price: 32.99, // corrected from 'rice'
     imageUrl: "lucas.png",
     altText: "an image of a child",
   },
