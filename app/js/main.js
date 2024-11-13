@@ -12,8 +12,10 @@ let idCounter = 0;
 
 function displayCards(data) {
   DOMSelectors.container.innerHTML = ""; // Clear container first
+  idCounter = 0; // Reset idCounter to 0 each time displayCards is called
+
   data.forEach((card) => {
-    idCounter += 1;
+    idCounter += 1; // Increment idCounter for each card
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
       `<div class="card" id="card-${idCounter}">
@@ -32,10 +34,8 @@ function displayCards(data) {
   });
 }
 
-// Initial display
 displayCards(kidsData);
 
-// Event listeners
 DOMSelectors.children.addEventListener("click", () => {
   const filteredData = kidsData.filter((kid) => kid.age < 13);
   displayCards(filteredData);
