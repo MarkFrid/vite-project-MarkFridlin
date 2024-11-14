@@ -13,7 +13,6 @@ let idCounter = 0;
 
 function displayCards(data) {
   DOMSelectors.container.innerHTML = "";
-  /*   idCounter = 0; */
 
   data.forEach((card) => {
     idCounter += 1;
@@ -24,7 +23,7 @@ function displayCards(data) {
         <h3 class="card-subheading" id="subheading-${idCounter}">Age: ${
         card.age
       }</h3>
-        <p class="card-price">Price: $${card.price.toFixed(2)}</p>
+        <h3> class="card-price">Price: $${card.price.toFixed(2)}</h3>
         ${
           card.imageUrl
             ? `<img class="card-img" id="img-${idCounter}" src="${card.imageUrl}" alt="${card.altText}">`
@@ -44,7 +43,18 @@ DOMSelectors.children.addEventListener("click", () => {
 
 DOMSelectors.teenagers.addEventListener("click", () => {
   const filteredData = kidsData.filter((kid) => kid.age >= 13);
-  displayCards(filteredData);
+
+  DOMSelectors.container.innerHTML = filteredData
+    .map(
+      (kid) => `
+      <div class="card">
+        <h2>${kid.name}</h2>
+        <p>Age: ${kid.age}</p>
+        <p>Price: $${kid.price}</p>
+        <img src="${kid.imageUrl}" alt="${kid.altText}" />
+      </div>`
+    )
+    .join(""); // Combine into a single HTML string
 });
 
 DOMSelectors.all.addEventListener("click", () => {
