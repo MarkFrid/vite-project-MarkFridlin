@@ -54,7 +54,7 @@ DOMSelectors.teenagers.addEventListener("click", () => {
         <img src="${kid.imageUrl}" alt="${kid.altText}" />
       </div>`
     )
-    .join(""); // Combine into a single HTML string
+    .join("");
 });
 
 DOMSelectors.all.addEventListener("click", () => {
