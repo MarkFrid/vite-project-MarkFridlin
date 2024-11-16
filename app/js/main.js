@@ -48,15 +48,18 @@ DOMSelectors.teenagers.addEventListener("click", () => {
     .map(
       (kid) => `
       <div class="card">
-        <h2>${kid.name}</h2>
-<<<<<<< HEAD
-        <p>Age: ${kid.age}</p>
-        <h3 class = card-price>Price: $${kid.price}</h3>
-=======
-        <h3>Age: ${kid.age}</h3>
-        <h3>Price: $${kid.price}</h3>
->>>>>>> 8490429d742f18d885376e637047945a777fe67e
-        <img src="${kid.imageUrl}" alt="${kid.altText}" />
+                <h2 class="card-heading" id="heading-${idCounter}">${
+        card.name
+      }</h2>
+        <h3 class="card-subheading" id="subheading-${idCounter}">Age: ${
+        card.age
+      }</h3>
+        <h3 class="card-price">Price: $${card.price.toFixed(2)}</h3>
+        ${
+          card.imageUrl
+            ? `<img class="card-img" id="img-${idCounter}" src="${card.imageUrl}" alt="${card.altText}">`
+            : ""
+        }
       </div>`
     )
     .join("");
