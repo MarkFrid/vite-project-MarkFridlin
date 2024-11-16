@@ -49,8 +49,13 @@ DOMSelectors.teenagers.addEventListener("click", () => {
       (kid) => `
       <div class="card">
         <h2>${kid.name}</h2>
+<<<<<<< HEAD
         <p>Age: ${kid.age}</p>
         <h3 class = card-price>Price: $${kid.price}</h3>
+=======
+        <h3>Age: ${kid.age}</h3>
+        <h3>Price: $${kid.price}</h3>
+>>>>>>> 8490429d742f18d885376e637047945a777fe67e
         <img src="${kid.imageUrl}" alt="${kid.altText}" />
       </div>`
     )
