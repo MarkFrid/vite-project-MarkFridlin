@@ -39,6 +39,7 @@ displayCards(kidsData);
 DOMSelectors.children.addEventListener("click", () => {
   const filteredData = kidsData.filter((kid) => kid.age < 13);
   displayCards(filteredData);
+  document.body.classList.add("dark");
 });
 
 DOMSelectors.teenagers.addEventListener("click", () => {
@@ -60,4 +61,8 @@ DOMSelectors.teenagers.addEventListener("click", () => {
 DOMSelectors.all.addEventListener("click", () => {
   const filteredData = kidsData.filter((kid) => kid.age < 1000);
   displayCards(filteredData);
+});
+
+document.querySelector(".btn").addEventListener("click", function () {
+  console.log("works");
 });

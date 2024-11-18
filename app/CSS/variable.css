@@ -1,19 +1,22 @@
 :root{
     --dark-black: #333334;
-    --dark-red: #d13449; 
-    --dark-grey: #9fa9ac;
+    --dark-red: #9c2535; 
+    --dark-grey: #a8d4e2;
 
     --light-white: #cccccb;
     --light-red: #d13449;
     --light-black: #605653;
 
-    --primary: var(--light-white);
+
 
     --h1: 7.993rem;
     --h2: 5.653rem;
     --h3: 3.998rem;
     --h4: 2.827rem;
     --h5: 1.999rem;
+
+    --primary: var(--dark-red);
+    --secondary: var(--dark-black);
 }
 .light{
     --primary: var(--light-white);
@@ -24,7 +27,7 @@
   
 .dark{
     --primary: var(--dark-black);
-    --secondary: var(--light-red);
+    --secondary: var(--dark-red);
     --text: var(--dark-grey);
     
   }

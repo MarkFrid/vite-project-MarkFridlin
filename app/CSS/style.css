@@ -21,7 +21,7 @@ body {
 }
 
 body {
-  background: linear-gradient(to bottom right, var(--light-red), var(--dark-red));
+  background-color: var(--secondary);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -31,7 +31,7 @@ h1 {
   font-size: var(--h1);
   text-align: center;
   margin-bottom: 0.5vh;
-  background: linear-gradient(to bottom, var(--dark-black), var(--primary), var(--light-grey));
+  background-color: var(--primary);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -73,24 +73,24 @@ h1 {
   height: 45vh;
   border: 1vw solid var(--dark-black);
   border-radius: 5%;
-  background: radial-gradient(circle, var(--light-black), var(--dark-black));
+  background-color: var(--primary);
   box-shadow: -10px 10px 20px var(--dark-black);
 }
 
 .card-heading {
   font-size: var(--h3);
-  color: var(--primary);
+  color: var(--text);
   margin-bottom: 5%;
 }
 
 .card-subheading {
   font-size: var(--h4);
-  color: var(--light-grey);
+  color: var(--text);
   margin-bottom: 5%;
 }
 .card-price {
   font-size: var(--h5);
-  color: var(--dark-grey);
+  color: var(--text);
   margin-bottom: 5%;
 }
 
