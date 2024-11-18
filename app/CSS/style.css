@@ -21,7 +21,7 @@ body {
 }
 
 body {
-  background-color: var(--light-secondary);
+  background: linear-gradient(to bottom right, var(--light-red), var(--dark-red));
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -31,7 +31,7 @@ h1 {
   font-size: var(--h1);
   text-align: center;
   margin-bottom: 0.5vh;
-  background: linear-gradient(to bottom, var(--dark-primary), var(--light-tertiary));
+  background: linear-gradient(to bottom, var(--dark-black), var(--primary), var(--light-grey));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -71,10 +71,10 @@ h1 {
   min-width: 400px;
   width: 30%;
   height: 45vh;
-  border: 1vw solid var(--dark-primary);
+  border: 1vw solid var(--dark-black);
   border-radius: 5%;
-  background: radial-gradient(circle, var(--light-primary), var(--dark-primary));
-  box-shadow: -10px 10px 20px var(--dark-primary);
+  background: radial-gradient(circle, var(--light-black), var(--dark-black));
+  box-shadow: -10px 10px 20px var(--dark-black);
 }
 
 .card-heading {
@@ -85,23 +85,23 @@ h1 {
 
 .card-subheading {
   font-size: var(--h4);
-  color: var(--light-tertiary);
+  color: var(--light-grey);
   margin-bottom: 5%;
 }
 .card-price {
   font-size: var(--h5);
-  color: var(--light-tertiary);
+  color: var(--dark-grey);
   margin-bottom: 5%;
 }
 
 .card-img {
-  height: 50%;
+  height: 55%;
   object-fit: contain;
 }
 
 @media (max-width: 900px) {
   h1 {
-    font-size: var(--h1);
+    font-size: var(--h2);
   }
 
   .container {
@@ -121,7 +121,7 @@ h1 {
 
   .name,
   .imgLink {
-    width: 250px;
+    width: 200px;
   }
 
   .btn {

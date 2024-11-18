@@ -1,13 +1,13 @@
 :root{
-    --dark-primary: #333334;
-    --dark-secondary: #d13449; 
-    --dark-tertiary: #9fa9ac;
+    --dark-black: #333334;
+    --dark-red: #d13449; 
+    --dark-grey: #9fa9ac;
 
-    --light-primary: #cccccb;
-    --light-secondary: #d13449;
-    --light-tertiary: #605653;
+    --light-white: #cccccb;
+    --light-red: #d13449;
+    --light-black: #605653;
 
-    --primary: var(--dark-primary);
+    --primary: var(--light-white);
 
     --h1: 7.993rem;
     --h2: 5.653rem;
@@ -15,3 +15,16 @@
     --h4: 2.827rem;
     --h5: 1.999rem;
 }
+.light{
+    --primary: var(--light-white);
+    --secondary: var(--light-red);
+    --text: var(--light-black);
+    
+  }
+  
+.dark{
+    --primary: var(--dark-black);
+    --secondary: var(--light-red);
+    --text: var(--dark-grey);
+    
+  }
